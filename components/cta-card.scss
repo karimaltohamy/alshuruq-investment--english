@@ -1,0 +1,83 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+// start cta-card
+.cta-card {
+    padding: 60px 0;
+
+    .cta-card-content {
+        padding: 4.6rem;
+        background-image: url(../images/invest-photo.png), linear-gradient(to bottom, rgba(0, 9, 87, 0.7803921569), #000957);
+        background-repeat: no-repeat;
+        background-position: left, center;
+        background-size: contain, cover;
+        border-radius: 15px;
+
+        .text {
+            h4 {
+                color: white;
+                font-size: 35px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: white;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                border: none;
+                background-color: white;
+                padding: 20px 30px;
+                font-size: 17px;
+                border-radius: 8px;
+                font-weight: 600;
+                color: #000957;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .cta-card-content {
+        padding: 2.6rem !important;
+        background-image: linear-gradient(to bottom, rgba(0, 9, 87, 0.7803921569), #000957), url(../images/invest-photo.png) !important;
+
+        .text {
+            h4 {
+                font-size: 25px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 580px) {
+    .cta-card {
+        padding: 30px 0 !important;
+
+        .cta-card-content {
+            padding: 1.2rem !important;
+            margin: 0 10px;
+        }
+        
+        .text {
+            h4 {
+                font-size: 17px !important;
+                margin-bottom: 5px !important;
+            }
+
+            p {
+                font-size: 13px !important;
+                margin-bottom: 15px !important;
+            }
+
+            a {
+                padding: 11px 25px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+// end cta-card

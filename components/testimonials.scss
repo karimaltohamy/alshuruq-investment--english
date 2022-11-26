@@ -1,0 +1,83 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+// start testimonials
+.testimonials {
+    padding: 50px 0;
+    background-color: #577bc187;
+
+    .title-testimonials {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 80px;
+        color: #000957;
+    }
+
+    .boxs-testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        gap: 25px;
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: $third-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                i {
+                    color: white;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .testimonials {
+        .title-testimonials {
+            margin-bottom: 30px !important;
+            font-size: 20px !important;
+        }
+
+        .boxs-testimonials {
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+            gap: 15px !important;
+
+            .box {
+                padding: 15px !important;
+
+                .icon {
+                    width: 45px !important;
+                    height: 45px !important;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// end testimonials

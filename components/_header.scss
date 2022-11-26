@@ -1,0 +1,170 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+// start header
+
+
+
+.header {
+    padding: 10px 0;
+    background-color: $second-color;
+    position: relative;
+
+    &.header-scroll {
+        position: fixed;
+        height: 75px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $second-color;
+        z-index: 999;
+    }
+
+    .content-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                width: 120px;
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .nav-item {
+                position: relative;
+                .nav-link {
+                    color: white;
+                    font-size: 19px;
+
+                    &.active-link {
+                        color: $main-color !important;
+                    }
+                }
+
+                .icon-down {
+                    position: absolute;
+                    left: -18px;
+                    top: 18px;
+                    width: 16px;
+                    transform: translateY(-50%);
+                    color: white;
+                }
+
+                .dropdown--menu {
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    background-color: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    z-index: 99;
+                    width: 115px;
+                    display: none;
+
+                    .dropdown-item {
+                        padding: 5px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+
+                        .dropdown-link {
+                            color: $third-color;
+
+                            &.dropdown-active {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown--menu {
+                        display: block;
+                    }
+                }
+
+                .nav-btn {
+                    background-color: #EBE645;
+                    padding: 15px;
+                    border-radius: 10px;
+                    color: #000957;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .menu-btn {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        .content-header {
+            position: relative;
+
+            .nav-list {
+                position: absolute;
+                top: 45px;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #000957;
+                border-radius: 7px;
+                gap: 10px;
+                padding: 13px;
+                transition: 0.3s;
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+
+                &.active-list {
+                    opacity: 1;
+                    top: 72px;
+                    height: 230px;
+                    overflow: visible;
+                }
+
+                .nav-link {
+                    font-size: 16px !important;
+                }
+
+
+                .dropdown--menu {
+                    top: 24px !important;
+                }
+
+                .nav-btn {
+                    padding: 7px !important;
+                    font-size: 13px !important;
+                    border-radius: 7px !important;
+                }
+            }
+
+            .menu-btn {
+                display: block;    
+                background-color: transparent;
+                border: none;
+                border: 1px solid white;
+                display: flex;
+                cursor: pointer;
+    
+                svg {
+                    width: 30px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+// end header

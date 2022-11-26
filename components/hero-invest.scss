@@ -1,0 +1,82 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+// start hero-invest
+.hero-invest {
+    height: 450px;
+    background-color: $second-color;
+    padding: 50px 0 60px;
+
+    .hero-content {
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        a {
+            border: none;
+            padding: 20px 35px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: 0.3s;
+            background-color: #EBE645;
+            color: #000957;
+        }
+    }
+}
+
+// img-hero-invest
+.img-hero-invest {
+    padding: 30px 20px 100px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        margin-top: -190px;
+    }
+}
+// img-hero-invest
+
+
+@media(max-width: 500px ) {
+    .hero-invest {
+        height: 360px !important;
+
+        .hero-content {
+            h1 {
+                font-size: 30px !important;
+                margin-bottom: 8px !important;            
+            }
+
+            p {
+                font-size: 13px !important;
+            }
+
+            a {
+                padding: 13px 20px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    // img-hero-invest
+
+    .img-hero-invest {
+        padding: 10px 20px 5px !important;
+        img {
+            margin-top: -140px;
+        }
+    }
+}
+// end hero-invest

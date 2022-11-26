@@ -1,0 +1,104 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+
+// start about-projects
+.about-projects {
+    padding: 60px 0;
+
+    .about-content {
+        .title-about {
+            font-size: 35px;
+            font-weight: 700;
+            color: #000957;
+            text-align: center;
+        }
+
+        .desc-about {
+            text-align: center;
+            color: gray;
+        }
+
+        .col-about {
+            font-size: 18px;
+            font-weight: 500;
+            color: $third-color;
+        }
+
+        .boxs {
+            margin-top: 20px;
+            .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                i {
+                    font-size: 50px;
+                    color: $main-color;
+                }
+
+                .text {
+                    h5 {
+                        font-size: 19px;
+                        color: $third-color;
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        color: gray;
+                        font-size: 15px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .about-projects  {
+        padding: 30px 0;
+
+        .title-about {
+            font-size: 23px !important;
+            margin-bottom: 5px !important;
+        }
+
+        .desc-about {
+            font-size: 13px !important;
+        }
+
+        .col-about {
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        .boxs {
+            .box {
+                margin-bottom: 20px;
+                gap: 10px !important;
+
+                i {
+                    font-size: 30px !important;
+                }
+
+                .text {
+                    text-align: center;
+                    
+                    h5 {
+                        font-size: 15px !important ;
+                    }
+
+                    p {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+} 
+// end about-projects

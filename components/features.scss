@@ -1,0 +1,96 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+// start features
+.features {
+    padding: 70px 0;
+
+    .content-features {
+        .title-features {
+            font-size: 34px;
+            font-weight: 700;
+            color: $third-color;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .sub-title {
+            text-align: center;
+            transform: translateY(-60px);
+            font-size: 20px;
+        }
+
+        .features-line {
+            align-items: center;
+            padding-bottom: 60px;
+
+            h1 {
+                font-weight: 400;
+                font-size: 41px;
+                margin-bottom: 16px;
+                color: $third-color;
+            }
+
+            p {
+                font-size: 18px;
+                color: gray;
+            }
+
+            img {
+                border-radius: 10px;
+                height: 450px;
+                max-width: 640px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .features {
+        padding: 45px 0 !important;
+
+        .title-features {
+            margin-bottom: 30px !important;
+            font-size: 20px !important;
+        }
+
+        .sub-title {
+            transform: translateY(-25px) !important;
+            font-size: 18px !important;
+        }
+
+        .features-line {
+            padding-bottom: 20px !important;
+            h1 {
+                font-size: 20px !important;
+                margin-bottom: 5px !important;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 13px !important;
+            }
+
+            img {
+                height: auto ;
+            }
+        }
+
+        .features-line:nth-of-type(2) {
+            flex-direction: column-reverse !important;
+        }
+    }
+}
+
+
+@media(max-width: 500px) {
+    .features-line {
+        img {
+            height: 170px!important;
+            object-fit: cover;
+        }
+    }
+}
+// end features

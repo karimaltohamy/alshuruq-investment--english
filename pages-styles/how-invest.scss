@@ -1,0 +1,63 @@
+$main-color: #EBE645;
+$second-color: #577BC1;
+$third-color: #000957;
+
+
+// start features-how 
+.features-how  {
+    background: linear-gradient(to top, rgba(87, 123, 193, 0.31) 15%, white);
+}
+// end features-how 
+
+
+// start about-breif
+.about-breif {
+    background-image: linear-gradient(to bottom, rgba(0, 9, 87, 0.7803921569), #000957);
+    padding: 50px 0;
+    margin-bottom: 20px;
+
+    .about-content {
+        color: white;
+        text-align: center;
+
+        .col-about {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .btn-about {
+            border: none;
+            padding: 20px 35px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: 0.3s;
+            background-color: #EBE645;
+            color: #000957;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .about-breif  {
+        .title-about {
+            font-size: 20px;
+        }
+
+        .desc-about {
+            font-size: 14px;
+        }
+
+        .col-about {
+            p {
+                font-size: 14px !important;
+            }
+        }
+
+        .btn-about {
+            padding: 13px 20px !important;
+            font-size: 15px !important;
+        }
+    }
+}
+// end about-breif
